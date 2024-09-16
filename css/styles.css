@@ -78,6 +78,7 @@ h1,h2,h3 {
 .navegacion-principal {
   display: flex;
   flex-direction: column;
+
 }
 
 @media (min-width: 768px) {
@@ -100,6 +101,7 @@ h1,h2,h3 {
 .navegacion-principal a:hover {
   background-color: var(--primario);
   color: var(--oscuro);
+  
 }
 
 .hero {
