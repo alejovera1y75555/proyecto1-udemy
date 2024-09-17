@@ -4,20 +4,39 @@
   --primario: #ffc107;
   --secundario: #0097a7;
   --gris: #757575;
+  --grisClaro: #DFE9F3;
 }
+
+/* Comentario en CSS **/
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-*, *:before, *:after{
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  font-size: 16px; /** 1rem =10px */
+  font-size: 16px;
+  /** 1rem =10px */
   font-family: "krub", sans-serif;
+  background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
+
+.sombra {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+  box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+/** Tipografia **/
 
 h1 {
   font-size: 3.8rem;
@@ -30,7 +49,10 @@ h2 {
 h3 {
   font-size: 1.8rem;
 }
-h1,h2,h3 {
+
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
@@ -45,6 +67,7 @@ h1,h2,h3 {
   margin-bottom: 0;
   margin-left: auto;
 }
+
 .boton {
   background-color: var(--secundario);
   color: var(--blanco);
@@ -101,37 +124,40 @@ h1,h2,h3 {
 .navegacion-principal a:hover {
   background-color: var(--primario);
   color: var(--oscuro);
-  
+
 }
 
 .hero {
-background-image: url(../img/hero.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-height: 450px;
-position: relative;
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+  margin-bottom: 2rem;
+
 }
 
 .contenido-hero {
   position: absolute;
-  background-color: rgba(0, 0, 0, .7); /**Anterior**/
-  background-color: rgb( 0 0 0 / 70% );
+  background-color: rgba(0, 0, 0, .7);
+  /**Anterior**/
+  background-color: rgb(0 0 0 / 70%);
   width: 100%;
   height: 100%;
 
   display: flex;
-  flex-direction: column;    /**Codigo para alinear vertical y horizontalmente , las 4 columnas **/ 
+  flex-direction: column;
+  /**Codigo para alinear vertical y horizontalmente , las 4 columnas **/
   align-items: center;
   justify-content: center;
 }
+
 .contenido-hero h2,
 .contenido-hero p {
-  color: var( --blanco); 
+  color: var(--blanco);
 }
 
 .ubicacion {
   display: flex;
   align-items: flex-end;
 }
-
- 
